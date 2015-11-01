@@ -1,0 +1,52 @@
+{
+  "name": "webpacking",
+  "version": "0.0.0",
+  "description": "webpack-ing, run webpack or webpack-dev-server with pickable custom configure. Help you to manage many of multiple verbose web configs through a custom config file",
+  "license": "MIT",
+  "repository": "ragingwind/webpacking",
+  "author": {
+    "name": "ragingwind",
+    "email": "ragingwind@gmail.com",
+    "url": "ragingwind.me"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "webpack",
+    "webpack-dev-server",
+    "webpacking"
+  ],
+  "dependencies": {
+    "meow": "^3.3.0",
+    "pinkie-promise": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.14",
+    "babel-loader": "^6.0.0",
+    "cjsx-loader": "^2.0.1",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
+    "mocha": "^2.2.5",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1",
+    "xo": "^0.9.0"
+  },
+  "xo": {
+    "rules": {
+      "global-require": 0
+    },
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  }
+}
