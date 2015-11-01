@@ -105,11 +105,11 @@ Usage
 webpacking [runner] [input] [options]
 
 Options
---configs: the names of configures you want to set up for webpack. should be passed with `,` and no-space
+--configs: the names of configures. should be passed with `,` and no-space
 
 Examples
-$ webpacking compile ./webpack.config.js --configs=modules,app
-		$ webpacking server ./webpack.config.js --configs=modules,server
+	$ webpacking compile ./webpack.config.js --configs=modules,app
+	$ webpacking server ./webpack.config.js --configs=modules,server
 ```
 
 
