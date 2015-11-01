@@ -51,37 +51,37 @@ var webpack = require('webpack');
 module.exports = {
 	modules: {
 		module: {
-		  loaders: [{
-		    test: /\.jsx?$/,
-		    exclude: /node_modules/,
-		    loaders: ['babel-loader']
-		  }, {
-		    test: /\.coffee$/,
-		    exclude: /node_modules/,
-		    loader: 'coffee-loader'
-		  }, {
-		    test: /\.cjsx$/,
-		    exclude: /node_modules/,
-		    loaders: ['coffee', 'cjsx']
-		  }]
+			loaders: [{
+				test: /\.jsx?$/,
+				exclude: /node_modules/,
+				loaders: ['babel-loader']
+			}, {
+				test: /\.coffee$/,
+				exclude: /node_modules/,
+				loader: 'coffee-loader'
+			}, {
+				test: /\.cjsx$/,
+				exclude: /node_modules/,
+				loaders: ['coffee', 'cjsx']
+			}]
 		}
 	},
 	app: {
 		entry: path.resolve(__dirname, 'app.coffee'),
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      publicPath: 'dist/',
-      filename: 'app.js',
-    }
+		output: {
+			path: path.resolve(__dirname, 'dist'),
+			publicPath: 'dist/',
+			filename: 'app.js',
+		}
 		...
 	},
 	server: {
 		entry: path.resolve(__dirname, 'app.coffee'),
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      publicPath: 'dist/',
-      filename: 'app.js'
-    }
+		output: {
+			path: path.resolve(__dirname, 'dist'),
+			publicPath: 'dist/',
+			filename: 'app.js'
+		}
 		...
 	}
 };
@@ -101,14 +101,14 @@ $ npm install --global webpacking
 ```
 $ webpacking --help
 
-  Usage
-    webpacking [runner] [input] [options]
+Usage
+webpacking [runner] [input] [options]
 
-  Options
-    --configs: the names of configures you want to set up for webpack. should be passed with `,` and no-space
+Options
+--configs: the names of configures you want to set up for webpack. should be passed with `,` and no-space
 
-  Examples
-    $ webpacking compile ./webpack.config.js --configs=modules,app
+Examples
+$ webpacking compile ./webpack.config.js --configs=modules,app
 		$ webpacking server ./webpack.config.js --configs=modules,server
 ```
 
