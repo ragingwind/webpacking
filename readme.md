@@ -35,13 +35,16 @@ webpacking('compile', './fixtures/webpack.config.js', {
 
 Type: `string`
 
-webpack runner type what you want to run
+webpack runner type what you want to run.
+
+- `compile`: bundle by `webpack`
+- `server`: run server with `webpack-dev-server`
 
 #### configs
 
 Type: `string`
 
-path for custom webpack configure file. see below sample and tests for more information
+path for custom webpack configure file. see below sample and tests for more information.
 
 ```
 'use strict';
