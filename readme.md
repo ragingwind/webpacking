@@ -1,4 +1,4 @@
-# webpacking [![Build Status](https://travis-ci.org/ragingwind/webpacking.svg?branch=master)](https://travis-ci.org/ragingwind/webpacking)
+# webpacking [![Build Status](https://travis-ci.org/ragingwind/node-webpacking.svg?branch=master)](https://travis-ci.org/ragingwind/node-webpacking)
 
 > webpack-ing, run webpack or webpack-dev-server with pickable custom configure
 
