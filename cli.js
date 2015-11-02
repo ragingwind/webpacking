@@ -24,4 +24,6 @@ if (cli.input.length < 2 || !cli.flags.configs) {
 
 webpacking(cli.input[0], cli.input[1], {
 	configs: cli.flags.configs.split(',')
+}).catch(function (err) {
+	console.error(err.toString());
 });
