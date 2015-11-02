@@ -51,6 +51,10 @@ WebpackRunner.compile = function (configs, cb) {
 	var compiler = webpack(configs);
 
 	compiler.run(function (err, stats) {
+		console.log(stats.toString({
+			colors: true
+		}));
+		
 		cb(err || (stats.hasErrors() ? getError(stats) : null));
 	});
 };
