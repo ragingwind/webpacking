@@ -1,4 +1,4 @@
-# webpacking [![Build Status](https://travis-ci.org/ragingwind/node-webpacking.svg?branch=master)](https://travis-ci.org/ragingwind/node-webpacking)
+# webpacking [![Build Status](https://travis-ci.org/ragingwind/webpacking.svg?branch=master)](https://travis-ci.org/ragingwind/webpacking)
 
 > webpack-ing, run webpack or webpack-dev-server with pickable custom configure
 
@@ -46,7 +46,7 @@ Type: `string`
 
 path for custom webpack configure file. see below sample and tests for more information.
 
-```
+```js
 'use strict';
 var path = require('path');
 var webpack = require('webpack');
@@ -97,11 +97,11 @@ the names of configures you want to set up for webpack
 
 ## CLI
 
-```
+```sh
 $ npm install --global webpacking
 ```
 
-```
+```sh
 $ webpacking --help
 
 Usage
