@@ -1,6 +1,6 @@
 {
   "name": "webpacking",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "webpack-ing, run webpack or webpack-dev-server with pickable custom configure. Help you to manage many of multiple verbose web configs through a custom config file",
   "license": "MIT",
   "repository": "ragingwind/webpacking",
