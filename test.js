@@ -1,42 +1,39 @@
 'use strict';
-var assert = require('assert');
-var webpacking = require('./');
 
-it('should returns anything', function (done) {
-	webpacking('compile', './fixtures/webpack.config.js', {
+import test from 'ava';
+import webpacking from './';
+
+test('should returns anything', t => {
+	return webpacking('compile', './fixtures/webpack.config.js', {
 		configs: [
 			'app',
 			'modules'
 		]
 	}).then(function () {
-		assert.ok(true);
-		done();
+		t.ok(true);
 	});
 });
 
-it('should returns an error', function (done) {
+test('should returns an error', t => {
 	webpacking('compile', './fixtures/webpack.config-error.js', {
 		configs: [
 			'app',
 			'modules'
 		]
 	}).then(function () {
-		assert.ok(false);
-		done();
+		t.ok(false);
 	}, function () {
-		assert.ok(true);
-		done();
+		t.ok(true);
 	});
 });
 
-it('should returns no error from server', function (done) {
+test('should returns no error from server', t => {
 	webpacking('server', './fixtures/webpack.config.js', {
 		configs: [
 			'server',
 			'modules'
 		]
 	}).then(function () {
-		assert.ok(true);
-		done();
+		t.ok(true);
 	});
 });
